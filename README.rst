@@ -1,10 +1,11 @@
 zoyalab.com public repo
 =======================
 
-This is the repository for the zoyalab.com_ public-facing website. 
+This is the repository for the zoyalab.com_ public-facing website.
 
-As you can see, it's all very simplistic, enclosed within single, old-skool index.html file and the only fancy thing are the `Bootstrap`_ css/js/widget goodies (and, obviously, *The Quick Message Launcher Handler*).
+Now in version 2.0 *beta*! This time we've decided to go super-fancy and used `Marco Theme`_ from excellent `blacktie.co`_ repository of simple and modern Bootstrap themes.
 
 .. _zoyalab.com: http://zoyalab.com/
-.. _Bootstrap: http://twitter.github.com/bootstrap/
+.. _`blacktie.co`: http://www.blacktie.co/
+.. _`Marco Theme`: http://www.blacktie.co/2014/03/marco-one-page-theme/
 
