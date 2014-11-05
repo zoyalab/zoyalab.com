@@ -1,0 +1,15 @@
+#headerwrap {
+    background: none;
+    background-color: white;
+    min-height: 520px;
+}
+
+#headerwrap h1 {
+    font-size: 88px;
+    color: black;
+}
+
+h3.sublogo {
+    font-size: 28px;
+    color: black;
+}

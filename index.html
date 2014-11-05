@@ -1,241 +1,252 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>zoya.lab | the web software company</title>
-        <meta name="description" content="zoya.lab is the web software company located in Zielona Góra, Poland. We are small but agile and building web applications to suit you. Get in touch to find out more!">
-        <meta name="keywords" content="web, software, applications, apps, application, development, developers, developer, programming, programmers, software, software house, house, internet, php, mysql, python, django, sql, html, javascript, css, outsource, outsourcing, remote">
-        <meta name="viewport" content="width=device-width">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="zoya.lab is the web software company located in Zielona Góra, Poland. We are small but agile and building web applications to suit you. Get in touch to find out more!">
+    <meta name="keywords" content="web, software, applications, apps, application, development, developers, developer, programming, programmers, software, software house, house, internet, php, mysql, python, django, sql, html, javascript, css, outsource, outsourcing, remote developer, offshore development, offshore software house, software house">
+    <meta name="author" content="zoya.lab">
 
-        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="./css/zoyalab.css">
-    </head>
-    <body data-spy="scroll" data-target="#navbar" data-offset="50">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
 
+    <title>zoya.lab | the web software company</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/zoyalab.css" rel="stylesheet">
+
+    <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 13,
+
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(51.9410554,15.4863457),
+
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [   {       featureType:'water',        stylers:[{color:'#74c9be'},{visibility:'on'}]   },{     featureType:'landscape',        stylers:[{color:'#f2f2f2'}] },{     featureType:'road',     stylers:[{saturation:-100},{lightness:45}]  },{     featureType:'road.highway',     stylers:[{visibility:'simplified'}] },{     featureType:'road.arterial',        elementType:'labels.icon',      stylers:[{visibility:'off'}]    },{     featureType:'administrative',       elementType:'labels.text.fill',     stylers:[{color:'#444444'}] },{     featureType:'transit',      stylers:[{visibility:'off'}]    },{     featureType:'poi',      stylers:[{visibility:'off'}]    }]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+    </script>
+
+
+    <!-- Main Jquery & Hover Effects. Should load first -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <! ========== HEADERWRAP ====================================================================================================
+    =============================================================================================================================>
+    <div id="headerwrap">
         <div class="container">
-
-            <div class="row-fluid">
-                <div class="span4 stick">
-                    <header class="logo">
-                        <h1>zoya.lab</h1>
-                        <h2>the web software company</h2>
-                    </header>
-                    <nav id="navbar">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a href="#about-us" class="navlink">Who are we?</a></li>
-                            <li><a href="#partners" class="navlink">Our partners</a></li>
-                            <li><a href="#join-us" class="navlink">Join us</a></li>
-                            <li><a href="#get-in-touch" class="navlink">Get in touch</a></li>
-                        </ul>
-                    </nav>
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2 mt">
+                    <h1 class="animation slideDown">zoya.lab</h1>
+                    <h3 class="animation slideLeft sublogo">the web software company</h3>
                 </div>
 
-                <div class="span8 offset4">
-                    <a name="about-us" id="about-us"></a>
-                    <article>
-                        <header>
-                            <h2>Hello,</h2>
-                            <h4>We have no fancy website*, as we focus to deliver excellent web apps for our clients instead.</h4>
-                        </header>
-                        <p>
-                            We are a small team of experienced web developers
-                            building great bespoke web software. We've started
-                            off as an independent entity relatively recently
-                            (mid-2012), however we have strong expertise and web
-                            development background reaching early-2000s.
-                        </p>
-                        <p>
-                            Whether you'd like to materialize your ideas for The Next Major Thing
-                            On The Internet, or implement a complex business application, or
-                            perhaps just create advanced website for your company - you're in perfect
-                            place!
-                        </p>
-                        <p>
-                            We're looking forward to hear about the great web app you'd
-                            like us to create for you - just  <a href="javascript:void(0);" class="contact-form-trigger" data-placement="bottom">get in touch</a>
-                            to find out more.
-                        </p>
-                        <p class="text-right">
-                            <small>(*) although it's built on top of <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Fancy!</small>
-                        </p>
-                    </article>
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div> <!-- /headerwrap -->
 
-                    <p class="text-right tophop">
-                        <a href="#">[^] Hop to the top</a>
+    <! ========== BLACK SECTION =================================================================================================
+    =============================================================================================================================>
+    <div id="black">
+        <div class="container">
+            <div class="row mt centered">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <h3>Who we are?</h3>
+                    <hr>
+                </div><!-- /col-lg-4 -->
+            </div><!-- /row -->
+
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>We are a small team of experienced developers focused on back-end web application development.<br/>The zoya.lab company has been founded in 2012, however members of zoya.lab team have strong web development background reaching early-2000s.</p>
+
+                    <p>Whether you'd like to materialize your idea for The Next Major Thing On The Internet, implement a complex B2B application, create and execute a successful e-commerce website, or perhaps you're looking to support and extend an existing web application - we are here to help you.</p>
+                </div><! --/col-lg-8 -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!-- /black -->
+
+    <! ========== FEATURED ICONS ================================================================================================
+    =============================================================================================================================>
+    <div id="white">
+        <div class="container">
+            <div class="row mt">
+                <div class="col-lg-4 col-lg-offset-4 centered">
+                    <h3>What we do?</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mt">
+                <div class="col-lg-3">
+                    <h4>Back-end development</h4>
+                    <p>As a web software house our primary focus is back-end development - the heart and engine of every web application that covers core business logic that matters most from client's point of view. Technologies covered: PHP/MySQL (LAMP stack), Python+Django, AngularJS etc.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h4>E-commerce</h4>
+                    <p>The e-commerce business is complex and fascinating at the same time. We've been working with a number of exciting e-comm projects which included product databases with 10+ million products. We can help you build either a small shop selling limited range of t-shirts as well as bespoke B2B e-commerce application.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Mobile apps</h4>
+                    <p><em>Mobile</em> seems like a buzzword - everyone and everything goes <em>mobile</em> nowadays. In fact, it turns out <em>mobile</em> and <em>web</em> have a lot in common. Leveraging the best of both worlds we can build hybrid mobile app using web technologies that work exactly as a native app for Android or iOS.
+                </div>
+                <div class="col-lg-3">
+                    <h4>Consultancy &amp; support</h4>
+                    <p>Our experience has been valued by a number of clients who asked us to support and extend existing web applications, as well as provide consultancy services.</p>
+                </div>
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!-- /white -->
+
+    <! ========== BRANDS & CLIENTS ===============================================================================================
+    =============================================================================================================================>
+    <div id="black">
+        <div class="container">
+            <div class="row mt centered ">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <h3>Clients</h3>
+                    <hr>
+                </div><!-- /col-lg-4 -->
+            </div><!-- /row -->
+
+            <div class="row centered">
+                <div class="col-md-4 pt">
+                    <a href="http://www.tangentsnowball.com"><img src="./assets/img/clients/tangentsnowball.png" alt="Tangent Snowball"></a>
+                </div>
+                <div class="col-md-4 pt">
+                    <a href="http://arkschools.org"><img src="assets/img/clients/ark-schools.png" alt="ARK Schools"></a>
+                </div>
+                <div class="col-md-4 pt">
+                    <a href="http://www.artfinder.com"><img src="assets/img/clients/artfinder.png" alt="Artfinder"></a>
+                </div>
+                <!-- <div class="col-lg-3 pt">
+                    <img class="img-responsive" src="assets/img/clients/client04.png" alt="">
+                </div> -->
+
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!-- /grey -->
+
+
+    <! ========== CONTACT SECTION ===============================================================================================
+    =============================================================================================================================>
+
+    <div id="white">
+        <div class="container">
+            <div class="row mt">
+                <div class="col-lg-4 col-lg-offset-4 centered">
+                    <h3>Contact Us</h3>
+                    <hr>
+                </div>
+            </div><! --/row -->
+        </div><!-- /container -->
+    <div id="map"></div>
+    </div><!-- /white -->
+
+
+    <! ========== FOOTER ========================================================================================================
+    =============================================================================================================================>
+
+    <div id="f">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h4>Get in touch</h4>
+                    <p>
+                        <i class="fa fa-envelope-o"></i> hello@zoyalab.com<br/>
+                        <i class="fa fa-mobile"></i> +48 68 411 41 71 <small>(office)</small><br/>
+                        <i class="fa fa-mobile"></i> +48 604 067 956 <small>(mobile)</small><br/>
+                        <em><small>(you'll be speaking to Dawid)</small></em>
                     </p>
+                </div><! --/col-lg-3 -->
 
-                    <a name="partners" id="partners"></a>
-                    <article>
-                        <header>
-                            <h2>Our partners</h2>
-                        </header>
-                        <p>
-                            We're still fresh and don't have huge number of clients. <em>Yet.</em>
-                            However, we are really happy and proud of the work we did
-                            so far.
-                        </p>
-                        <div class="partner-section">
-                            <h4>Tangent Snowball</h4>
-                            <p>
-                                <span class="partner-logo">
-                                    <a href="http://www.tangentsnowball.com" target="_top"><img src="./img/clients/ts-logo.png" border="0" title="" /></a>
-                                </span>
-                                <a href="http://www.tangentsnowball.com" target="_top">Tangent Snowball</a>
-                                is the London-based digital agency. We provide ongoing
-                                support for wide array of existing projects in Tangent
-                                Snowball's portfolio, as well as implement fresh projects
-                                from scratch for their clients.
-                            </p>
-                        </div>
-                        <div class="partner-section">
-                            <h4>[PARTNER_PLACEHOLDER]</h4>
-                            <p>
-                                <span class="partner-logo partner-logo-placeholder">[LOGO_PLACEHOLDER]</span>
-                                We're more than happy to keep this place up for your company's
-                                logo, little nice note and a testimonial too. <a href="javascript:void(0);" class="contact-form-trigger">Let us know</a>
-                                if you want to advertise here. ;)
-                            </p>
-                        </div>
-                    </article>
-
-                    <p class="text-right tophop">
-                        <a href="#">[^] Hop to the top</a>
+                <div class="col-md-6">
+                    <h4>Find us</h4>
+                    <p>
+                        Kręta 5/216<br/>
+                        65-770 Zielona Góra<br/>
+                        Poland
                     </p>
+                </div><!-- /col-lg-3 -->
 
-                    <a name="join-us" id="join-us"></a>
-                    <article>
-                        <header>
-                            <h2>Join us</h2>
-                            <h4>Web application developer</h4>
-                        </header>
-                        <p>
-                            We are looking out for talented programmers whose lifeblood
-                            are modern web development languages and techniques. Most of
-                            the projects we work on are based on either PHP or Python/Django,
-                            hence having strong experience in either/both of these is definitely
-                            a huge bonus, however we believe that a passion and genuine willingness
-                            to explore and learn stuff is what matters the most.
-                        </p>
-                        <p>
-                            We offer a full-time employment in the office located
-                            in <a href="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zoya.lab&amp;aq=&amp;sll=51.937749,15.511777&amp;sspn=0.113029,0.265045&amp;vpsrc=0&amp;ie=UTF8&amp;hq=zoya.lab&amp;hnear=&amp;ll=51.973461,15.511665&amp;spn=0.112939,0.265045&amp;t=m&amp;z=12&amp;iwloc=A&amp;cid=14671939734930649052" target="_blank">Zielona Góra, Poland</a>,
-                            competetive salary, flexible working hours and - most
-                            importantly - an opportunity to expand working experience
-                            around international web projects of various scope.
-                        </p>
-
-                        <p><strong>
-                            Here's the few things that are nice to have when thinking
-                            of joining zoya.lab:
-                        </strong></p>
-                        <ul>
-                            <li>
-                                evidence of <em>programming passion</em>, ie. GitHub account (or similar)
-                                with own contributions, samples of involvment to non-work related
-                                projects etc.;
-                            </li>
-                            <li>
-                                strong experience using Django web framework and/or LAMP stack,
-                                including PHP-based MVC frameworks;
-                            </li>
-                            <li>
-                                familiarity with front-end technologies like HTML5, CSS3,
-                                JavaScript, jQuery, node.js etc.;
-                            </li>
-                            <li>
-                                good sense of Linux command line and ability to perform
-                                basic tasks around it.
-                            </li>
-                        </ul>
-
-                        <p>
-                            <strong>Sounds like a good fit?</strong> <a href="#get-in-touch" class="contact-form-trigger">Send us an email</a>,
-                            providing CV and short paragraph or two explaining why you think we should hire you.
-                        </p>
-                    </article>
-
-                    <p class="text-right tophop">
-                        <a href="#">[^] Hop to the top</a>
-                    </p>
-
-                    <a name="get-in-touch" id="get-in-touch"></a>
-                    <article>
-                        <header>
-                            <h2>Get in touch</h2>
-                        </header>
-                        <p>
-                            We'd love to hear from you. Use contacts below to reach us.
-                            <dl>
-                                <dt>E-mail</dt>
-                                <dd>
-                                    <a href="javascript:void(0);" data-toggle="popover" class="contact-form-trigger">Drop us a line directly</a>,<br/>
-                                    or send an email to <strong>hello@zoyalab.com</strong>
-                                </dd>
-
-                                <dt>Phone</dt>
-                                <dd>
-                                    +48 68 411 41 71<br/>
-                                    +48 604 067 956<br/>
-                                    <em>You will be speaking to Dawid</em>
-                                </dd>
-
-                                <dt>Finally, the oldskool postcard address</dt>
-                                <dd>
-                                    Kręta 5/216<br/>
-                                    65-770 Zielona Góra<br/>
-                                    Poland<br/>
-                                    <em><a href="https://maps.google.pl/maps?f=q&source=s_q&hl=pl&geocode=&q=zoya.lab&aq=&sll=51.937749,15.511777&sspn=0.113029,0.265045&vpsrc=0&ie=UTF8&hq=zoya.lab&hnear=&ll=51.973461,15.511665&spn=0.112939,0.265045&t=m&z=12&iwloc=A&cid=14671939734930649052" target="_blank">Find us on Google Maps</a></em>
-                                </dd>
-                            </dl>
-                        </p>
-                    </article>
-
-                    <p class="text-right tophop">
-                        <a href="#">[^] Start over, shall we?</a>
-                    </p>
+            </div><! --/row -->
+            <div class"row">
+                <div class="centered">
+                    <small>
+                        <em>zoya.lab, the web software company</em> is a trading name of "ZOYA LAB Arkadiusz Dawid Lorenz", a company registered in municipality of Zielona Góra, Poland, VAT ID: PL9730587206.
+                    </small>
                 </div>
             </div>
 
-            <hr>
+        </div><!-- /container -->
+    </div><!-- /f -->
 
-            <footer>
-                <p>
-                    &copy; ZOYA LAB Arkadiusz Dawid Lorenz 2013<br/>
-                </p>
-                <p>
-                    <a href="https://github.com/zoyalab/zoyalab.com" target="_blank">Fork us on GitHub</a>
-                </p>
-            </footer>
 
-        </div>
 
-        <div id="contact-form-container">
-            <form id="contact-form" action="email.php" method="post">
-                <input type="text" name="name" placeholder="Your name" /><br/>
-                <input type="text" name="contact" placeholder="Email address" /><br/>
-                <textarea name="message" rows="6" placeholder="Your message"></textarea><br/>
-                <input type="submit" class="btn btn-info" value="Shoot!" id="contact-form-submit" />
-                <input type="button" class="btn btn-link" value="Cancel" id="contact-form-cancel" />
-            </form>
-        </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/retina.js"></script> -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 
-        <script src="./js/plugins.js"></script>
-        <script src="./js/main.js"></script>
+    <script>
+        $(window).scroll(function() {
+            $('.si').each(function(){
+            var imagePos = $(this).offset().top;
 
-        <script>
-            var _gaq=[['_setAccount','UA-34215610-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+            var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+400) {
+                    $(this).addClass("slideUp");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        var _gaq=[['_setAccount','UA-34215610-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+
+  </body>
 </html>
